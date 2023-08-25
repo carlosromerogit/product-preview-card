@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: normal;
+    src: url("/dist/assets/fonts/Fraunces-Montserrat/Montserrat/static/Montserrat-Medium.ttf")
+      format("ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/dist/assets/fonts/Fraunces-Montserrat/Montserrat/static/Montserrat-Bold.ttf")
+      format("ttf");
+  }
+  @font-face {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-style: normal;
+    src: url("/dist/assets/fonts/Fraunces-Montserrat/Montserrat/static/Montserrat-Black.ttf")
+      format("ttf");
+  }
+  @font-face {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/dist/assets/fonts/Fraunces-Montserrat/Fraunces/static/Fraunces_144pt-Bold.ttf")
+      format("ttf");
+  }
+  @font-face {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-style: normal;
+    src: url("/dist/assets/fonts/Fraunces-Montserrat/Fraunces/static/Fraunces_144pt-Black.ttf")
+      format("ttf");
+  }
+}
+
+.test {
+  dark-cyan: #3c8067;
+  cream: #f2ebe3;
+  very-dark-blue: #1c232b;
+  dark-grayish-blue: #6c7289;
+}

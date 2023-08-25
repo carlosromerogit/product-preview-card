@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../dist/styles.css" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-cream font-montserrat font-medium p-4">
+    <div class="min-h-screen flex flex-col justify-center items-center">
+      <div
+        class="bg-white flex flex-col sm:flex-row rounded-lg overflow-hidden max-w-xs sm:max-w-xl"
+      >
+        <div class="basis-1/2">
+          <picture>
+            <source
+              media="(max-width:640px)"
+              srcset="/dist/assets/images/image-product-mobile.jpg"
+            />
+            <img
+              src="/dist/assets/images/image-product-desktop.jpg"
+              alt="Product Image"
+            />
+          </picture>
+        </div>
+        <div class="basis-1/2 p-6 relative">
+          <p class="text-xs text-grayblue uppercase tracking-[0.40em] mb-4">
+            Perfume
+          </p>
+          <h1 class="font-fraunces font-black text-4xl mb-3">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="text-grayblue mb-4">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex space-x-5 sm:space-x-2 items-center mb-4 sm:mb-5">
+            <span class="text-darkcyan text-4xl font-fraunces font-black"
+              >$149.99</span
+            >
+            <span class="text-grayblue text-sm line-through decoration-current"
+              >$169.99</span
+            >
+          </div>
+          <button
+            class="bg-darkcyan text-white text-base font-bold w-full py-2 rounded-md hover:bg-darkcyan-900"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution py-2">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Carlos Romero</a>.
+    </div>
+  </body>
+</html>
